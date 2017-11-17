@@ -13,7 +13,7 @@ Search customer:search customers in database; dispay them in one table; edit or 
 
 Advanced Search:search customers in database under multiple requirements; dispay them in one table; edit or delete 
 
-Page view: divide results on multiple pages
+Pagination: divide results on multiple pages
 
 ## Skill Set
 SQL
@@ -27,7 +27,7 @@ JSTL
 JavaWeb 3-tier application 
 
 
-           ui (view)←(contorller)
+           ui  (view)←(contorller)
 
 　　　　　　***********************
 

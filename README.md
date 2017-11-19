@@ -1,7 +1,7 @@
 # CustomerManagementSystem
 
 ## TODO
-frontend backgroud animation
+replace frameset (deprecated HTML Tag)
 
 customer information vaildation
 
@@ -16,6 +16,10 @@ Advanced Search:search customers in database under multiple requirements; dispay
 Pagination: divide results on multiple pages
 
 ## Skill Set
+Java/HTML/CSS/JavaScript
+
+HTML5 Canvas
+
 SQL
 
 JDBC c3p0
@@ -46,6 +50,10 @@ servlet forward & redirect
 IntelliJ IDEA + Tomcat 8 + MySQL 
 
 ## Screenshots
+
+### Background
+
+![image](https://github.com/DouglasChenH/CustomerManagementSystem/raw/master/screenshots/background.png)
 
 ### Add Customer
 

@@ -19,9 +19,9 @@ public class Demo
             customer.setId(CommonUtils.uuid());
             customer.setName("customer"+i);
             customer.setGender(i%2==0?"male":"female");
-            customer.setPhone("13476"+i);
-            customer.setEmail("customer"+i+"@163.com");
-            customer.setDescription("helle world");
+            customer.setPhone("647"+i);
+            customer.setEmail("customer"+i+"@hotmail.com");
+            customer.setDescription("hello world");
 
             customerDao.add(customer);
         }

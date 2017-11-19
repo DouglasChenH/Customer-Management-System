@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CustomerManagementSystem.iml" filepath="$PROJECT_DIR$/.idea/CustomerManagementSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CustomerManagement-master.iml" filepath="$PROJECT_DIR$/.idea/CustomerManagement-master.iml" />
     </modules>
   </component>
 </project>

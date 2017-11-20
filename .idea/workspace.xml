@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e85dbf86-cd74-4932-955a-06076ebc0fa8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshots/addCustomer.png" afterPath="$PROJECT_DIR$/screenshots/addCustomer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshots/advancedSearch.png" afterPath="$PROJECT_DIR$/screenshots/advancedSearch.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -487,12 +485,20 @@
       <workItem from="1510947528250" duration="7297000" />
       <workItem from="1510974485872" duration="5880000" />
       <workItem from="1511132000915" duration="3701000" />
-      <workItem from="1511135886932" duration="1286000" />
+      <workItem from="1511135886932" duration="1388000" />
     </task>
+    <task id="LOCAL-00001" summary="update screenshots">
+      <created>1511137213765</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511137213765</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28883000" />
+    <option name="totallyTimeSpent" value="28985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="191" y="0" width="1400" height="990" extended-state="0" />
@@ -534,6 +540,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="update screenshots" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

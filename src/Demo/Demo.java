@@ -8,7 +8,7 @@ import org.apache.commons.dbutils.QueryRunner;
 
 public class Demo
 {
-    QueryRunner qr=new TxQueryRunner();
+    QueryRunner qr = new TxQueryRunner();
     public static void main(String[] args)
     {
         CustomerDao customerDao=new CustomerDao();

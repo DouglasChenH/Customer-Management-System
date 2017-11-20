@@ -57,18 +57,20 @@ public class CustomerDao
             pb.setPr(pr);
 
             String sql="select count(*) from t_customer";
-            Number number=(Number) qr.query(sql,new ScalarHandler<>());
+            Number number=(Number);
+            qr.query(sql,new ScalarHandler<>());
 
             int tr=number.intValue();
             pb.setTr(tr);
 
             sql="select * from t_customer order by name limit ?,?";
             Object[] params={(pc-1)*pr,pr};
-            List<Customer> beanList=qr.query(sql,new BeanListHandler<>(Customer.class),params);
+            List<Customer> beanList = qr.query(sql,new BeanListHandler<>(Customer.class),params);
 
             pb.setBeanList(beanList);
 
             return pb;
+
         }catch (Exception e)
         {
             throw new RuntimeException(e);
@@ -158,8 +160,8 @@ public class CustomerDao
             pb.setPc(pc);
             pb.setPr(pr);
 
-            StringBuilder cntSql = new StringBuilder("select count(*) from t_customer ");
-            StringBuilder whereSql=new StringBuilder(" where 1=1 ");
+            StringBuilder cntSql = new StringBuilder("select count(*) from t_customer");
+            StringBuilder whereSql = new StringBuilder(" where 1=1 ");
             List<Object> params = new ArrayList<>();
 
             String name = customer.getName();
@@ -201,6 +203,7 @@ public class CustomerDao
             pb.setBeanList(beanList);
 
             return pb;
+
         }catch (Exception e)
         {
             throw new RuntimeException(e);

@@ -17,7 +17,7 @@ public class CustomerServlet extends BaseServlet {
 
     private CustomerService customerService = new CustomerService();
 
-    public String add(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void add(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         Customer customer = CommonUtils.toBean(request.getParameterMap(), Customer.class);
         customer.setId(CommonUtils.uuid());
@@ -25,8 +25,8 @@ public class CustomerServlet extends BaseServlet {
         customerService.add(customer);
 
         request.setAttribute("msg", "Congulation! customer added successfully");
-
-        return "/msg.jsp";
+        request.getRequestDispatcher("/msg.jsp").forward(request, response);
+        //return "/msg.jsp";
     }
 
 //    public String findAll(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -37,7 +37,7 @@ public class CustomerServlet extends BaseServlet {
 //        return "/list.jsp";
 //    }
 
-    public String findAll(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void findAll(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
        /*
         *1.get pc from request
         * 2.set up pr
@@ -49,6 +49,7 @@ public class CustomerServlet extends BaseServlet {
         *   if pc doestn't exist，pc＝1
         *   if pc exist，turn pc to type init
         */
+
         int pc = getPc(request);
 
         int pr = 10;//set up 10 records per page, changable
@@ -57,8 +58,9 @@ public class CustomerServlet extends BaseServlet {
         pb.setUrl(getUrl(request));
 
         request.setAttribute("pb", pb);
+        request.getRequestDispatcher("/list.jsp").forward(request, response);
+        //return "/list.jsp";
 
-        return "/list.jsp";
     }
 
     private int getPc(HttpServletRequest request) {
@@ -69,34 +71,35 @@ public class CustomerServlet extends BaseServlet {
         return Integer.parseInt(value);
     }
 
-    public String preEdit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void preEdit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
         Customer customer = customerService.find(id);
 
         request.setAttribute("customer", customer);
-
-        return "/edit.jsp";
+        request.getRequestDispatcher("/edit.jsp").forward(request, response);
+        //return "/edit.jsp";
     }
 
-    public String edit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void edit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         Customer customer = CommonUtils.toBean(request.getParameterMap(), Customer.class);
 
         customerService.edit(customer);
 
         request.setAttribute("msg", "Cougulation! Customer edited successfully");
-        return "/msg.jsp";
+        request.getRequestDispatcher("/msg.jsp").forward(request, response);
+        //return "/msg.jsp";
     }
 
-    public String delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String id = request.getParameter("id");
 
         customerService.delete(id);
 
         request.setAttribute("msg", "Cougulation! Customer deleted successfully");
-
-        return "/msg.jsp";
+        request.getRequestDispatcher("/msg.jsp").forward(request, response);
+        //return "/msg.jsp";
     }
 
 //    public String query(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -111,7 +114,7 @@ public class CustomerServlet extends BaseServlet {
 //
 //    }
 
-    public String query(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void query(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         Customer customer = CommonUtils.toBean(request.getParameterMap(), Customer.class);
 
@@ -126,7 +129,8 @@ public class CustomerServlet extends BaseServlet {
         pb.setUrl(getUrl(request));
 
         request.setAttribute("pb", pb);
-        return "/list.jsp";
+        request.getRequestDispatcher("/list.jsp").forward(request, response);
+        //return "/list.jsp";
 
     }
 

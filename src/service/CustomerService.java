@@ -10,7 +10,7 @@ import java.util.List;
 
 public class CustomerService
 {
-    CustomerDao customerDao=new CustomerDao();
+    CustomerDao customerDao = new CustomerDao();
 
     public void add(Customer customer)
     {

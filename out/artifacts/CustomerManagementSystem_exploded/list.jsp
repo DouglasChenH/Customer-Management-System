@@ -2,12 +2,14 @@
 <%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <title>Customer List</title>
 </head>
+
 <body>
+<script> PageBean<Customer> pb = (PageBean<Customer>)request.getAttribute("pb");</script>
     <h3 align="center" >Customer List</h3>
     <table border="1" width="70%" align="center">
         <tr>
@@ -33,7 +35,8 @@
         </c:forEach>
     </table>
 <br/>
-<center>
+<p style = "text-align:center;">
+
     ${pb.pc}/${pb.tp}  <%--current page/ total page--%>
     <a href="${pb.url}&pc=1">First Page</a>
     <c:if test="${pb.pc>1}">
@@ -80,7 +83,7 @@
     </c:if>
     <a href="${pb.url}&pc=${pb.tp}">Last Page</a>
 
-</center>
+</p>
 
 </body>
 </html>

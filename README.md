@@ -1,19 +1,25 @@
--# CustomerManagementSystem
+# CustomerManagementSystem
 
 ## TODO
-replace frameset (deprecated HTML Tag)
+solve bug "request.getAttribute("xx") == null" in jsp file list.jsp 
 
 customer information vaildation
 
-## Functionality
+## Overview
+Background:
+HTML5 Canvas tag, randomly drawing moving cirlces and connecting nearby centers
 
-Add customer: add customer information, including name, gender, cell phone number, email address, description
+Add customer: 
+add customer information, including name, gender, cell phone number, email address, description
 
-Search customer:search customers in database; dispay them in one table; edit or delete 
+Search customer: 
+search customers in database; dispay them in one table; edit or delete 
 
-Advanced Search:search customers in database under multiple requirements; dispay them in one table; edit or delete 
+Advanced Search:
+search customers in database under multiple requirements; dispay them in one table; edit or delete 
 
-Pagination: divide results on multiple pages
+Pagination: 
+divide results on multiple pages
 
 ## Skill Set
 Java/HTML/CSS/JavaScript
@@ -53,12 +59,12 @@ IntelliJ IDEA + Tomcat 8 + MySQL
 
 ### Background
 
-![image](https://github.com/DouglasChenH/CustomerManagementSystem/raw/master/screenshots/background.png)
+![image](https://github.com/DouglasChenH/Customer-Management-System/raw/master/screenshots/background.png)
 
 ### Add Customer
 
-![image](https://github.com/DouglasChenH/CustomerManagementSystem/raw/master/screenshots/addCustomer.png)
+![image](https://github.com/DouglasChenH/Customer-Management-System/raw/master/screenshots/addCustomer.png)
 
 ### Advanced Search
 
-![image](https://github.com/DouglasChenH/CustomerManagementSystem/raw/master/screenshots/advancedSearch.png)
+![image](https://github.com/DouglasChenH/Customer-Management-System/raw/master/screenshots/advancedSearch.png)

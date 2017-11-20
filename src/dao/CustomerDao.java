@@ -3,7 +3,6 @@ package dao;
 import cn.itcast.jdbc.TxQueryRunner;
 import domain.Customer;
 import domain.PageBean;
-import org.apache.commons.collections.buffer.CircularFifoBuffer;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
@@ -11,7 +10,7 @@ import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.spi.CurrencyNameProvider;
+
 
 
 public class CustomerDao
@@ -32,7 +31,7 @@ public class CustomerDao
         }
     }
 
-//    public List<Customer> findAll()
+    //    public List<Customer> findAll()
 //    {
 //        try{
 //            String sql="select * from t_customer";
@@ -57,8 +56,7 @@ public class CustomerDao
             pb.setPr(pr);
 
             String sql="select count(*) from t_customer";
-            Number number=(Number);
-            qr.query(sql,new ScalarHandler<>());
+            Number number=(Number)qr.query(sql,new ScalarHandler<>());
 
             int tr=number.intValue();
             pb.setTr(tr);

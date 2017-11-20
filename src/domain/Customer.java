@@ -1,8 +1,7 @@
 package domain;
 
 
-public class Customer
-{
+public class Customer {
     private String id;
     private String name;
     private String gender;
@@ -10,8 +9,11 @@ public class Customer
     private String email;
     private String description;
 
+    public Customer() {
+    }
+
     public String getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(String id) {
@@ -19,7 +21,7 @@ public class Customer
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -27,7 +29,7 @@ public class Customer
     }
 
     public String getGender() {
-        return gender;
+        return this.gender;
     }
 
     public void setGender(String gender) {
@@ -35,7 +37,7 @@ public class Customer
     }
 
     public String getPhone() {
-        return phone;
+        return this.phone;
     }
 
     public void setPhone(String phone) {
@@ -43,7 +45,7 @@ public class Customer
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     public void setEmail(String email) {
@@ -51,7 +53,7 @@ public class Customer
     }
 
     public String getDescription() {
-        return description;
+        return this.description;
     }
 
     public void setDescription(String description) {

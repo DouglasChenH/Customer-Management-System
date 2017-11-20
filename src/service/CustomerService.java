@@ -4,8 +4,6 @@ import dao.CustomerDao;
 import domain.Customer;
 import domain.PageBean;
 
-import java.util.List;
-
 
 
 public class CustomerService
@@ -17,7 +15,7 @@ public class CustomerService
         customerDao.add(customer);
     }
 
-//    public List<Customer> findAll()
+    //    public List<Customer> findAll()
 //    {
 //        return customerDao.findAll();
 //    }
@@ -44,8 +42,6 @@ public class CustomerService
     public PageBean<Customer> query(Customer customer,int pc,int pr)
     {
         return customerDao.query(customer,pc,pr);
-
-
     }
 
 }

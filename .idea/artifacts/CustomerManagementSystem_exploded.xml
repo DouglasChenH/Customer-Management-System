@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="exploded-war" name="CustomerManagementSystem-exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/CustomerManagementSystem_exploded</output-path>
-    <root id="root">
-      <element id="javaee-facet-resources" facet="CustomerManagement-master/web/Web" />
-      <element id="javaee-facet-resources" facet="CustomerManagement-master/web/Web" />
-    </root>
-  </artifact>
-</component>

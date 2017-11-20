@@ -1,19 +1,20 @@
 package domain;
 
+
 import java.util.List;
 
-
-public class PageBean<Object>
-{
-    private int pc;//current page code
-    //private int tp;//total pages
-    private int tr;//tatal records
-    private int pr;//page records( records per page)
-    private List<Object> beanList;//current page record
+public class PageBean<Object>{
+    private int pc;
+    private int tr;
+    private int pr;
+    private List<Object> beanList;
     private String url;
 
+    public PageBean() {
+    }
+
     public String getUrl() {
-        return url;
+        return this.url;
     }
 
     public void setUrl(String url) {
@@ -21,23 +22,20 @@ public class PageBean<Object>
     }
 
     public int getPc() {
-        return pc;
+        return this.pc;
     }
 
     public void setPc(int pc) {
         this.pc = pc;
     }
 
-    public int getTp()
-    {
-        int tp=tr/pr;
-        return tr % pr == 0 ? tp : tp + 1 ;
+    public int getTp() {
+        int tp = this.tr / this.pr;
+        return this.tr % this.pr == 0 ? tp : tp + 1;
     }
 
-
-
     public int getTr() {
-        return tr;
+        return this.tr;
     }
 
     public void setTr(int tr) {
@@ -45,7 +43,7 @@ public class PageBean<Object>
     }
 
     public int getPr() {
-        return pr;
+        return this.pr;
     }
 
     public void setPr(int pr) {
@@ -53,10 +51,11 @@ public class PageBean<Object>
     }
 
     public List<Object> getBeanList() {
-        return beanList;
+        return this.beanList;
     }
 
     public void setBeanList(List<Object> beanList) {
         this.beanList = beanList;
     }
 }
+

@@ -14,9 +14,10 @@
     <title>Title</title>
 </head>
 <body>
-
-
-<h1 style="color:green;" align="center">${msg}</h1>
+    <canvas id="canvas" style="position: absolute;z-index: -1;top: 0px;
+                        left: 0px;width: 100%;height: 100%;"></canvas>
+    <script src="js/index.js"></script>
+    <h1 style="color:green;" align="center">${msg}</h1>
 
 </body>
 </html>

@@ -17,6 +17,9 @@
 </head>
 
 <body>
+<canvas id="canvas" style="position: absolute;z-index: -1;top: 0px;
+                    left: 0px;width: 100%;height: 100%;"></canvas>
+<script src="js/index.js"></script>
 <h3 align="center">Customer List</h3>
 <table border="1" width="70%" align="center">
     <tr>
@@ -44,10 +47,10 @@
 <br/>
 <p style = "text-align:center;">
 
-    ${pb.pc}/${ pb.tp}  <%--current page/ total page--%>
-    <a href="${ pb.url}&pc=1">First Page</a>
+    ${pb.pc}/${ pb.tp} Pages  <%--current page/ total page--%>
+    <a href="${ pb.url}&pc=1"> First Page</a>
     <c:if test="${ pb.pc>1}">
-        <a href="${ pb.url}&pc=${ pb.pc-1}">Previous Page</a>
+        <a href="${ pb.url}&pc=${ pb.pc-1}"> Previous Page</a>
     </c:if>
 
     <c:choose>
@@ -86,9 +89,9 @@
 
 
     <c:if test="${ pb.pc< pb.tp}">
-        <a href="${ pb.url}&pc=${ pb.pc+1}">Next Page</a>
+        <a href="${ pb.url}&pc=${ pb.pc+1}"> Next Page</a>
     </c:if>
-    <a href="${ pb.url}&pc=${ pb.tp}">Last Page</a>
+    <a href="${ pb.url}&pc=${ pb.tp}"> Last Page</a>
 
 </p>
 

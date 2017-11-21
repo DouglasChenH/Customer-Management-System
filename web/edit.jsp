@@ -13,7 +13,9 @@
     <title>Title</title>
 </head>
 <body>
-
+<canvas id="canvas" style="position: absolute;z-index: -1;top: 0px;
+            left: 0px;width: 100%;height: 100%;"></canvas>
+<script src="js/index.js"></script>
 <h3 align="center">Edit Customer</h3>
 <form action="<c:url value='/CustomerServlet'/>" method="post" >
     <input type="hidden" name="method" value="edit"/>

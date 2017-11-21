@@ -20,9 +20,9 @@
 
 
 <h1>Customer Management System</h1>
+<a href="<c:url value='/CustomerServlet?method=findAll'/>">Customer List</a>
 <a href="<c:url value='/add.jsp'/>">Add Customer</a>
-<a href="<c:url value='/CustomerServlet?method=findAll'/>">Search Customer</a>
-<a href="<c:url value='/query.jsp'/>">Advanced Search</a>
+<a href="<c:url value='/query.jsp'/>">Search Customer</a>
 
 </body>
 </html>

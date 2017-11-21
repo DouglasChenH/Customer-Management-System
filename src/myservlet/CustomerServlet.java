@@ -24,7 +24,7 @@ public class CustomerServlet extends BaseServlet {
 
         customerService.add(customer);
 
-        request.setAttribute("msg", "Congulation! customer added successfully");
+        request.setAttribute("msg", "Congratulation! Customer added successfully");
         request.getRequestDispatcher("/msg.jsp").forward(request, response);
         //return "/msg.jsp";
     }
@@ -86,7 +86,7 @@ public class CustomerServlet extends BaseServlet {
 
         customerService.edit(customer);
 
-        request.setAttribute("msg", "Cougulation! Customer edited successfully");
+        request.setAttribute("msg", "Congratulation! Customer edited successfully");
         request.getRequestDispatcher("/msg.jsp").forward(request, response);
         //return "/msg.jsp";
     }
@@ -97,7 +97,7 @@ public class CustomerServlet extends BaseServlet {
 
         customerService.delete(id);
 
-        request.setAttribute("msg", "Cougulation! Customer deleted successfully");
+        request.setAttribute("msg", "Congratulation! Customer deleted successfully");
         request.getRequestDispatcher("/msg.jsp").forward(request, response);
         //return "/msg.jsp";
     }

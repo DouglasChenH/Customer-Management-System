@@ -24,15 +24,13 @@ Java/HTML/CSS/JavaScript
 
 HTML5 Canvas
 
-SQL
+SQL (MySQL)
 
-JDBC c3p0
-
-dbutil.jar
+JDBC c3p0 & dbutil
 
 JSTL
 
-JavaWeb 3-tier application 
+JavaWeb MVC 3-tier application 
 
 
            ui  (view)←(contorller)
@@ -63,6 +61,7 @@ IntelliJ IDEA + Tomcat 8 + MySQL
 ### Search Customer
 
 ![image](https://github.com/DouglasChenH/Customer-Management-System/raw/master/screenshots/searchCustomer.png)
+
 
 ![image](https://github.com/DouglasChenH/Customer-Management-System/raw/master/screenshots/searchResult.png)
 

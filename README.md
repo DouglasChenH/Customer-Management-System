@@ -1,7 +1,11 @@
--# CustomerManagementSystem
+# CustomerManagementSystem
+
+## Demo
+
+![image](https://github.com/DouglasChenH/Customer-Management-System/raw/master/screenshots/demo.png)
 
 ## TODO
-replace frameset (deprecated HTML Tag)
+login/logout user validation
 
 customer information vaildation
 
@@ -9,11 +13,11 @@ customer information vaildation
 
 Add customer: add customer information, including name, gender, cell phone number, email address, description
 
-Search customer:search customers in database; dispay them in one table; edit or delete 
+Customer list: current customer data in database; dispay them in one table; edit or delete 
 
-Advanced Search:search customers in database under multiple requirements; dispay them in one table; edit or delete 
+Advanced Search: search customers in database under multiple requirements; dispay them in one table; edit or delete 
 
-Pagination: divide results on multiple pages
+Pagination: divide results on multiple pages; 10 records per page; each time only request data resources for customers in this page
 
 ## Skill Set
 Java/HTML/CSS/JavaScript
@@ -51,14 +55,17 @@ IntelliJ IDEA + Tomcat 8 + MySQL
 
 ## Screenshots
 
-### Background
-
-![image](https://github.com/DouglasChenH/CustomerManagementSystem/raw/master/screenshots/background.png)
 
 ### Add Customer
 
-![image](https://github.com/DouglasChenH/CustomerManagementSystem/raw/master/screenshots/addCustomer.png)
+![image](https://github.com/DouglasChenH/Customer-Management-System/raw/master/screenshots/addCustomer.png)
 
-### Advanced Search
+### Search Customer
 
-![image](https://github.com/DouglasChenH/CustomerManagementSystem/raw/master/screenshots/advancedSearch.png)
+![image](https://github.com/DouglasChenH/Customer-Management-System/raw/master/screenshots/searchCustomer.png)
+
+![image](https://github.com/DouglasChenH/Customer-Management-System/raw/master/screenshots/searchResult.png)
+
+### Edit Customer
+
+![image](https://github.com/DouglasChenH/Customer-Management-System/raw/master/screenshots/editCustomer.png)
